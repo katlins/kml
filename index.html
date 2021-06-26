@@ -1,30 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Titulo do Site</title>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Katia Lins</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto&family=Source+Code+Pro&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/8a0de54ab0.js" crossorigin="anonymous"></script>
 </head>
-<header>
-  <nav class="menu">
-    <ul>
-      <li> <a href="Sobre.html"> Sobre</li></a>
-      <li> <a href="Portifolio.html"> Portifólio</li></a>
-      <li> <a href="Contato.html"> Contato</li></a>
-
-    </ul>
-  </nav>
-  <h1 class="site-title"> Katia Lins</h1>
-  <h3 class="site-subtitle"> Fontend Developer</h3>
-
-</header>
 
 <body>
+	<header>
+		<nav class="menu">
+			<ul class="container">
+				<li><a href="index.html">inicio</a></li>
+				<li><a href="#sobre">Sobre</a></li>
+				<li><a href="#portfolio">Portifólio</a></li>
+				<li><a href="#contato">Contato</a></li>
+			</ul>
+		</nav>
+		<div>
+			<h1 class="site-title">KATIA LINS</h1>
+			<h2 class="site-subtitle">Jr. Frontend Developer</h2>
 
+		</div>
+	</header>
+
+	<section class="sobre container" id="sobre">
+		<h2>Sobre</h2><br>
+		<figure class="avatar">
+			<img class="eu" src="/img/eu.jpg" width="300" height="300"
+			alt="">
+		</figure>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore autem quas fuga deserunt saepe, 
+			magni dolores tenetur, amet eligendi perferendis blanditiis cum, libero est non consectetur facilis 
+			illo perspiciatis distinctio?
+		</p>
+		<p>Est cumque odio esse aliquid. Corrupti sapiente earum ea fugit tempora architecto consequatur. Sint et 
+			distinctio ex. Omnis qui pariatur maiores corporis odio. Vitae modi iure est architecto consequuntur 
+			odio soluta aut. Recusandae maxime doloremque exercitationem id repudiandae.
+		</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore autem quas fuga deserunt saepe, 
+			magni dolores tenetur, amet eligendi perferendis blanditiis cum, libero est non consectetur facilis 
+			illo perspiciatis distinctio?
+		</p>
+		<p>Est cumque odio esse aliquid. Corrupti sapiente earum ea fugit tempora architecto consequatur. Sint et 
+			distinctio ex. Omnis qui pariatur maiores corporis odio. Vitae modi iure est architecto consequuntur 
+			odio soluta aut. Recusandae maxime doloremque exercitationem id repudiandae.
+		</p>
+
+	</section>
+	<section class="portfolio container" id="portfolio">
+
+		<h2>Portifólio</h2>
+		<div class="grid">
+			
+			<figure>
+				
+				<img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg"
+					alt="eCommerce">
+				<figcaption>eCommerce</figcaption>
+				</a>
+			</figure>
+			<figure>
+				<img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
+				<figcaption>Mobile</figcaption>
+			</figure>
+			<figure>
+				<img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt=">web">
+				<figcaption>Web </figcaption>
+			</figure>
+			<figure>
+				<img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
+					alt="Projetos pessoais">
+				<figcaption>Projetos pessoais</figcaption>
+			</figure>
+			<figure>
+				<img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
+					alt="Projetos pessoais">
+				<figcaption>Projetos pessoais</figcaption>
+			</figure>
+		</div>
+
+	</section>
+
+	<section class="contato" id="contato">
+		<h2>Contato</h2>
+	
+		<div class="grid icons">
+			<a target="_blank" href="https://github.com/">
+				<i class="fab fa-github"></i></i>
+			</a>
+			<a target="_blank" href="https://twitter.com/">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<a target="_blank" href="https://linkedin.com/">
+				<i class="fab fa-linkedin"></i>
+			</a>
+			<a target="_blank" href="https://instagram.com/">
+				<i class="fab fa-instagram"></i>
+			</a>
+			
+		</div>
+	</section>
 </body>
 
 </html>

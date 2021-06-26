@@ -1,0 +1,201 @@
+/* soft reset do css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: auto 100vh; 
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  font-size: 12px;
+}
+
+/* se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #015778;
+}
+
+.menu {
+  background-color: #292929;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 1;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+ list-style: none; 
+}
+
+.menu a {
+  
+  display: block;
+  padding: 10px 20px;
+  transition: 0.5s;
+}
+
+.menu a:hover{
+  background-color: #015778;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.site-subtitle, 
+.site-title {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 4em;
+  font-family: 'Source Code Pro', monospace;
+}
+
+
+.site-subtitle {
+ 
+ font-family: 'Roboto', sans-serif;
+ line-height: 1.8em;
+}
+
+.sobre p{
+  text-indent: 2em;
+  margin-bottom: 25px;
+  text-align: justify;
+
+}
+
+
+.sobre,
+.contato,
+.portfolio {
+  padding: 2em;
+  min-height: 100vh;
+  
+}
+
+@media (min-width:1200px){
+  .container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  }
+}
+.sobre h2,
+.contato h2,
+.portfolio h2 {
+  font-family: 'Source Code Pro', monospace;
+  color: #015778;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+}
+
+.sobre .avatar {
+  float: right;
+  margin-left: 1em;
+  
+}
+.sobre .avatar .eu{
+  border-radius: 50%;
+  margin-right: auto;
+  
+}
+
+
+.portfolio .grid {
+  display: grid;
+  gap: 2em;
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: 240px 240px;
+  }
+}
+
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
+  }
+}
+
+.portfolio figure {
+  text-align: center;
+}
+
+.img-portfolio {
+  height: 180px;
+  width: 240px;
+  object-fit: cover;
+  object-position: left bottom;
+  transition: 500ms;
+  
+}
+.img-portfolio:hover { 
+  transform:scale(1.2) rotate(-2deg);
+}
+
+.contato{
+  background-color: #015778;
+}
+
+.contato h2{
+  color: whitesmoke;
+}
+
+.contato .icons{
+  text-align: center;
+}
+
+.contato a {
+  text-align-last:inherit;
+  color: whitesmoke;
+  font-size: 2em;
+  }
+
+  .contato a:hover{
+    text-decoration: none;
+    
+  }
